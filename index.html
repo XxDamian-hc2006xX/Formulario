@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <style>
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 8px;
+    }
+    h4 {
+      margin: 10px ;
+      background: #f0f0f0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4"><h1>Formulario</h1></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="4">
+          <h4>Datos personales</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="txtNombre">Nombre:</label><br>
+          <input type="text" name="txtNombre" id="txtNombre" placeholder="ej. Susan">
+        </td>
+        <td>
+          <label for="txtApellido">Apellido:</label><br>
+          <input type="text" name="txtApellido" id="txtApellido" placeholder="ej. Ocampo">
+        </td>
+        <td>
+          <label for="txtRFC">RFC:</label><br>
+          <input type="text" name="txtRFC" id="txtRFC" placeholder="ej. MJV1234">
+        </td>
+        <td>
+          <label for="nNumero">Teléfono:</label><br>
+          <input type="number" name="nNumero" id="nNumero"placeholder="ej. 7771234567">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <h4>Datos de reserva</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="nPersonas">Ocupantes:</label><br>
+          <input type="number" name="nPersonas" id="nPersonas" placeholder="ej. 1-2">
+        </td>
+        <td>
+          <label>Habitación</label><br>
+          <input type="radio" name="habitacion" id="simple"> 
+          <label for="simple">Simple</label>
+          <input type="radio" name="habitacion" id="duplex">
+          <label for="duplex">Dúplex</label>
+          <input type="radio" name="habitacion" id="premium">
+          <label for="premium">Premium</label>
+
+          
+        </td>
+        <td>
+          <label>Camas</label><br>
+          <input type="radio" name="cama" id="matrimonial">
+          <label for="matrimonial">Matrimonial</label>
+          <input type="radio" name="cama" id="kingsize"> 
+          <label for="kingsize">Kingsize</label>
+          <input type="radio" name="cama" id="individual"> 
+          <label for="individual">Individual</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="dateLlegada">Fecha de llegada:</label><br>
+          <input type="date" id="dateLlegada" name="dateLlegada">
+        </td>
+        <td>
+          <label for="dateSalida">Fecha de salida:</label><br>
+          <input type="date" id="dateSalida" name="dateSalida">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <h4>Datos de dirección</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <label for="calle">Calle:</label><br>
+         <input type="text" name="calle" id="calle"placeholder="ej. Olivos">
+        </td>
+        <td>
+          <label for="colonia">Colonia:</label><br>
+          <input type="text" name="colonia" id="colonia" placeholder="ej. Jardines">
+        </td>
+        <td>
+          <label for="numero">Número:</label><br>
+          <input type="number" name="numero" id="numero" placeholder="ej. 291">
+        </td>
+        <td>
+          <label for="CP">Código Postal:</label><br>
+          <input type="number" name="CP" id="CP" placeholder="ej. 33354">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="seleccionarEstado">Estado:</label><br>
+          <select name="seleccionarEstado" id="seleccionarEstado">
+             <option value="-1">Seleccione</option>
+                <option value="Ag" >Aguascalientes</option>
+                <option value="Co">Colima</option>
+                <option value="Gu">Guerrero</option>
+                <option value="Mon" >Monterrey</option>
+                <option value="Mor">Morelos</option>
+                <option value="Yu">Yucatán</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <h4>Información adicional</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="check">Idiomas:</label><br>
+        </td>
+      </tr>
+       <tr>
+                    <td><input type="checkbox" name="idioma" id="español">
+                    <label for="español">Español</label></td>
+                    <td><input type="checkbox" name="idioma" id="ingles">
+                    <label for="ingles">Inglés</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="idioma" id="frances">
+                    <label for="frances">Francés</label></td>
+                    <td><input type="checkbox" name="idioma" id="aleman">
+                    <label for="aleman">Alemán</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="idioma" id="japones">
+                    <label for="japones">Japonés</label></td>
+                    <td><input type="checkbox" name="idioma" id="chino">
+                    <label for="chino">Chino</label></td>
+                </tr>
+          
+    </tbody>
+  </table>
+</body>
+</html>
